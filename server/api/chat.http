@@ -1,0 +1,27 @@
+GET http://localhost:5000/api/chat/conversations
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyZDk4MWQwOTI2NGZmYzc0M2JhMDkiLCJpYXQiOjE2NDIzODM3NDQsImV4cCI6MTY0Mjk4ODU0NH0.HZqlPYU1ZD9i1Q304NdPw-eB5vTCY5rlYABiImmB9NY
+
+{
+  "friend": "61c2d827d09264ffc743b9ee"
+}
+
+###
+POST http://localhost:5000/api/chat/send
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyZDk4MWQwOTI2NGZmYzc0M2JhMDkiLCJpYXQiOjE2NDIzODM3NDQsImV4cCI6MTY0Mjk4ODU0NH0.HZqlPYU1ZD9i1Q304NdPw-eB5vTCY5rlYABiImmB9NY
+
+{
+  "friend": "61c2e5cbd09264ffc743bf5b",
+  "content": "cong hoa xa hoi chu nghia viet nam doc lap tu do hanh phuc! cong hoa xa hoi chu nghia viet nam doc lap tu do hanh phuc!"
+}
+
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "lebathanhdnc@gmail.com",
+  "password": "12345678"
+}
